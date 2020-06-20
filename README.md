@@ -1,21 +1,63 @@
+<p align="left">
+   <img src=".github/logo.png" width="200"/>
+</p>
+
 # Pokecards
 
-**TODO: Add description**
+> Cards game for terminal to have fun playing with pokemons in a simple way.
 
-## Installation
+[![Author](https://img.shields.io/badge/author-LauraBeatris-363f5f?style=flat-square)](https://github.com/LauraBeatris)
+[![Languages](https://img.shields.io/github/languages/count/LauraBeatris/pokecards?color=%23363f5f&style=flat-square)](#)
+[![Stars](https://img.shields.io/github/stars/LauraBeatris/pokecards?color=363f5f&style=flat-square)](https://github.com/LauraBeatris/pokecards/stargazers)
+[![Forks](https://img.shields.io/github/forks/LauraBeatris/pokecards?color=%23363f5f&style=flat-square)](https://github.com/LauraBeatris/pokecards/network/members)
+[![Contributors](https://img.shields.io/github/contributors/LauraBeatris/pokecards?color=363f5f&style=flat-square)](https://github.com/LauraBeatris/pokecards/graphs/contributors)
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `pokecards` to your list of dependencies in `mix.exs`:
+---
 
-```elixir
-def deps do
-  [
-    {:pokecards, "~> 0.1.0"}
-  ]
-end
+# :pushpin: Table of Contents
+
+* [Installation](#construction_worker-installation)
+* [Getting Started](#runner-getting-started)
+* [FAQ](#postbox-faq)
+* [Found a bug? Missing a specific feature?](#bug-issues)
+* [Contributing](#tada-contributing)
+* [License](#closed_book-license)
+
+# :construction_worker: Installation
+
+**You need to install [Elixir](https://elixir-lang.org/install.html)**
+
+```
+  git clone https://github.com/LauraBeatris/pokecards.git
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/pokecards](https://hexdocs.pm/pokecards).
+SSH URLs provide access to a Git repository via SSH, a secure protocol. If you have a SSH key registered in your Github account, clone the project using this command:
 
+```
+  git clone git@github.com:LauraBeatris/pokecards.git
+```
+
+# :runner: Getting Started
+
+Run the following command in order to start the Interactive Elixir Shell
+
+```
+  iex -S mix
+```
+
+# :bug: Issues
+
+Feel free to **file a new issue** with a respective title and description on the [Pokecards](https://github.com/LauraBeatris/pokecards/issues) repository. If you already found a solution to your problem, **i would love to review your pull request**! Have a look at our [contribution guidelines](https://github.com/LauraBeatris/paypal-clone/blob/master/CONTRIBUTING.md) to find out about the coding standards.
+
+# :tada: Contributing
+
+Check out the [contributing](https://github.com/LauraBeatris/pokecards/blob/master/CONTRIBUTING.md) page to see the best places to file issues, start discussions and begin contributing.
+
+
+# :closed_book: License
+
+Documention and application under development.
+Released in 2020.
+This project is under the [MIT license](https://github.com/LauraBeatris/pokecards/master/LICENSE).
+
+Made with love by [Laura Beatris](https://github.com/LauraBeatris) 💜🚀
