@@ -25,7 +25,7 @@
 
 # :construction_worker: Installation
 
-**You need to install [Elixir](https://elixir-lang.org/install.html)**
+**You need to install [Elixir](https://elixir-lang.org/install.html) first, then in order to clone the project via HTTPS, run this command:**
 
 ```
   git clone https://github.com/LauraBeatris/pokecards.git
