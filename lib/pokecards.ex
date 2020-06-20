@@ -1,6 +1,17 @@
 defmodule Pokecards do
+  require Pokemon
+
   def create_deck do
-    ["Pikachu", "Bulbasaur", "Piplup"]
+    pokemons = [
+      %Pokemon{name: "Pikachu", ability: "Static"},
+      %Pokemon{name: "Bulbasaur", ability: "Overgrow"},
+      %Pokemon{name: "Piplup", ability: "Torrent"}
+    ]
+    damages = ["10", "20", "30", "40", "50"]
+
+    for pokemon <- pokemons, damage <- damages do
+      "Name: #{pokemon.name}, Ability: #{pokemon.ability}, Damage: #{damage}"
+    end
   end
 
   def shuffle(deck) do
