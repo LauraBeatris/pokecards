@@ -21,4 +21,14 @@ defmodule Pokecards do
   def constains?(deck, pokemon) do
     Enum.member?(deck, pokemon)
   end
+
+  def deal(deck, hand_size) do
+    { hand, _rest_of_deck } = Enum.split(deck, hand_size)
+    hand
+  end
+
+  def save(deckname, deck) do
+    binary = :erlang.term_to_binary(deck)
+    File.write!("decks/#{deckname}", binary)
+  end
 end
