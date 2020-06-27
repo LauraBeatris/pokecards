@@ -31,4 +31,15 @@ defmodule Pokecards do
     binary = :erlang.term_to_binary(deck)
     File.write!("decks/#{deckname}", binary)
   end
+
+  def load(deckname) do
+    try do
+      case File.read("decks/#{deckname}") do
+        { :ok, binary } -> :erlang.binary_to_term(binary)
+        { :error, _reason } -> raise "This file doesn't exists. Did you right the correct pathname?"
+      end
+    rescue
+      error in RuntimeError -> IO.puts("An error ocurred: #{error.message}")
+    end
+  end
 end
