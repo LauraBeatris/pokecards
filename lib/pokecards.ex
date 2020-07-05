@@ -28,8 +28,12 @@ defmodule Pokecards do
   end
 
   def save(deckname, deck) do
-    binary = :erlang.term_to_binary(deck)
-    File.write!("decks/#{deckname}", binary)
+    try do
+      binary = :erlang.term_to_binary(deck)
+      File.write!("decks/#{deckname}", binary)
+    rescue
+      error in RuntimeError -> IO.puts("An error ocurred: #{error.message}")
+    end
   end
 
   def load(deckname) do
@@ -41,5 +45,15 @@ defmodule Pokecards do
     rescue
       error in RuntimeError -> IO.puts("An error ocurred: #{error.message}")
     end
+  end
+
+  def create_hand(hand_size) do
+    if (!hand_size) do
+      raise "You must provide the size of the deck hand"
+    end
+
+    Pokecards.create_deck
+    |> Pokecards.shuffle
+    |> Pokecards.deal(hand_size)
   end
 end
