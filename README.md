@@ -18,6 +18,7 @@
 
 * [Installation](#construction_worker-installation)
 * [Getting Started](#runner-getting-started)
+* [Documentation](#book-documentation)
 * [FAQ](#postbox-faq)
 * [Found a bug? Missing a specific feature?](#bug-issues)
 * [Contributing](#tada-contributing)
@@ -44,6 +45,10 @@ Run the following command in order to start the Interactive Elixir Shell
 ```
   iex -S mix
 ```
+
+# :book: Documentation
+
+In order to explore the functions and module details, go to the [Documentation Page](https://laurabeatris.github.io/pokecards/Pokecards.html)
 
 # :bug: Issues
 
