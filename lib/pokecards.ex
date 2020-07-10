@@ -52,6 +52,7 @@ defmodule Pokecards do
       iex> Pokecards.constains?(deck, "Name: Piplup, Ability: Torrent, Damage: 50")
       true
   """
+  @doc since: "0.1.0"
   def constains?(deck, pokemon) do
     Enum.member?(deck, pokemon)
   end
@@ -66,6 +67,7 @@ defmodule Pokecards do
       iex> length(hand) == 2
       true
   """
+  @doc since: "0.1.0"
   def deal(deck, hand_size) do
     Enum.split(deck, hand_size)
   end
@@ -81,6 +83,7 @@ defmodule Pokecards do
       iex> Pokecards.save("cardname", deck)
       :ok
   """
+  @doc since: "0.1.0"
   def save(deckname, deck) do
     try do
       binary = :erlang.term_to_binary(deck)
@@ -97,6 +100,7 @@ defmodule Pokecards do
       iex> deck = Pokecards.load("test")
       iex> deck
   """
+  @doc since: "0.1.0"
   def load(deckname) do
     try do
       case File.read("decks/#{deckname}") do
@@ -116,6 +120,7 @@ defmodule Pokecards do
       iex> length(hand) == 5
       true
   """
+  @doc since: "0.1.0"
   def create_hand(hand_size) do
     if (!hand_size) do
       raise "You must provide the size of the deck hand"
