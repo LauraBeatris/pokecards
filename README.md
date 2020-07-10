@@ -50,6 +50,10 @@ Run the following command in order to start the Interactive Elixir Shell
 
 In order to explore the functions and module details, go to the [Documentation Page](https://laurabeatris.github.io/pokecards/Pokecards.html)
 
+<p align="center">
+  <img src=".github/docs-preview.png" width="600">
+</p>
+
 # :bug: Issues
 
 Feel free to **file a new issue** with a respective title and description on the [Pokecards](https://github.com/LauraBeatris/pokecards/issues) repository. If you already found a solution to your problem, **i would love to review your pull request**! Have a look at our [contribution guidelines](https://github.com/LauraBeatris/paypal-clone/blob/master/CONTRIBUTING.md) to find out about the coding standards.
